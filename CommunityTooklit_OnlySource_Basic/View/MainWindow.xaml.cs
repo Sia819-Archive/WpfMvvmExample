@@ -18,7 +18,9 @@ namespace CommunityTooklit_OnlySource_Basic
 
             // Bind controls to ViewModel properties
             BindingExpression bind1 = textBox1.SetBinding(TextBox.TextProperty, nameof(MainWindowViewModel.Text1));
-            bind1.
+            bind1.UpdateTarget();
+
+
             textBlock1.SetBinding(TextBlock.TextProperty, nameof(MainWindowViewModel.Text1));
             
             BindingExpression a = textBlock1.GetBindingExpression(TextBlock.TextProperty);
